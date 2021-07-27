@@ -9,3 +9,10 @@ org/example/webTest/domain/posts/PostsRepository.java
  org.example.webTest.domain.posts.PostsRepository
 org/example/webTest/Application.java
  org.example.webTest.Application
+org/example/webTest/web/PostsApiController.java
+ org.example.webTest.web.PostsApiController
+org/example/webTest/service/posts/PostsService.java
+ org.example.webTest.service.posts.PostsService
+org/example/webTest/web/dto/PostsSaveRequestDto.java
+ org.example.webTest.web.dto.PostsSaveRequestDto
+ org.example.webTest.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
