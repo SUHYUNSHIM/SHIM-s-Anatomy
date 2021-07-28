@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
-@Entity //엔티티 클래스.
+@Entity //엔티티 클래스. --> 엔티티 클래스에서는 setter 메소드를 만들지 않는다.
 public class Posts {
     @Id //해당 테이블의 primary key field
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,16 @@ public class Posts {
 
     private String author;
 
-    @Builder
+    @Builder //setter 대신에 생성 시점에 값을 채워주어야 한다. 생성자, builder
     public Posts(String title, String content, String author){
         this.title= title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
     }
 
 }

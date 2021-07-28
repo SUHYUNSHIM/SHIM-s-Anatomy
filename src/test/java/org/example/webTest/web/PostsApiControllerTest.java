@@ -21,6 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//JPA 기능, 외부 연동 테스트 시 SpringBootTest, TestRestTemplate를 사용한다.
 public class PostsApiControllerTest {
 
     @LocalServerPort
