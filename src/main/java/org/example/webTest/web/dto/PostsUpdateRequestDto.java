@@ -15,4 +15,5 @@ public class PostsUpdateRequestDto {
         this.title = title;
         this.content  = content;
     }
+    //쿼리를 날리는 부분이 없다. JPA의 콘텍스트 영속성 때문이다.
 }

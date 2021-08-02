@@ -1,15 +1,16 @@
 package org.example.webTest.domain.posts;
-
+//실제 데이터베이스 테이블과 매칭될 클래스. entitiy 클래스라 불림.
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.webTest.domain.BaseTimeEntity;
 
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity //엔티티 클래스. --> 엔티티 클래스에서는 setter 메소드를 만들지 않는다.
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id //해당 테이블의 primary key field
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

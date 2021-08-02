@@ -1,16 +1,21 @@
-org/example/webTest/domain/posts/Posts.java
- org.example.webTest.domain.posts.Posts
- org.example.webTest.domain.posts.Posts$PostsBuilder
+org/example/webTest/Application.java
+ org.example.webTest.Application
 org/example/webTest/web/HelloController.java
  org.example.webTest.web.HelloController
 org/example/webTest/web/dto/HelloResponseDto.java
  org.example.webTest.web.dto.HelloResponseDto
 org/example/webTest/domain/posts/PostsRepository.java
  org.example.webTest.domain.posts.PostsRepository
-org/example/webTest/Application.java
- org.example.webTest.Application
+org/example/webTest/domain/posts/Posts.java
+ org.example.webTest.domain.posts.Posts
+ org.example.webTest.domain.posts.Posts$PostsBuilder
+org/example/webTest/web/dto/PostsResponseDto.java
+ org.example.webTest.web.dto.PostsResponseDto
 org/example/webTest/web/PostsApiController.java
  org.example.webTest.web.PostsApiController
+org/example/webTest/web/dto/PostsUpdateRequestDto.java
+ org.example.webTest.web.dto.PostsUpdateRequestDto
+ org.example.webTest.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
 org/example/webTest/service/posts/PostsService.java
  org.example.webTest.service.posts.PostsService
 org/example/webTest/web/dto/PostsSaveRequestDto.java
