@@ -1,6 +1,7 @@
 package org.example.webTest.web;
 
 import lombok.RequiredArgsConstructor;
+import org.example.webTest.config.auth.dto.SessionUser;
 import org.example.webTest.service.posts.PostsService;
 import org.example.webTest.web.dto.PostsResponseDto;
 import org.springframework.stereotype.Controller;
@@ -8,10 +9,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpSession;
+
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
     private final PostsService postsService;
+    private final HttpSession httpSession;
 
     /*@GetMapping("/")
     public String index(){
@@ -20,6 +24,10 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
+        SessionUser user = (SessionUser)httpSession.getAttribute("user");
+        if(user !=null){
+            model.addAttribute("userName",user.getName());
+        }
         return "index";
     }
     @GetMapping("/posts/save") /*posts-save.mustache를 호출한다. */

@@ -1,29 +1,45 @@
-org/example/webTest/web/dto/HelloResponseDto.java
- org.example.webTest.web.dto.HelloResponseDto
+org/example/webTest/domain/user/User.java
+ org.example.webTest.domain.user.User
+ org.example.webTest.domain.user.User$UserBuilder
+org/example/webTest/config/auth/SecurityConfig.java
+ org.example.webTest.config.auth.SecurityConfig
+org/example/webTest/web/PostsApiController.java
+ org.example.webTest.web.PostsApiController
 org/example/webTest/web/dto/PostsUpdateRequestDto.java
  org.example.webTest.web.dto.PostsUpdateRequestDto
  org.example.webTest.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
+org/example/webTest/domain/user/UserRepository.java
+ org.example.webTest.domain.user.UserRepository
 org/example/webTest/domain/posts/Posts.java
  org.example.webTest.domain.posts.Posts
  org.example.webTest.domain.posts.Posts$PostsBuilder
 org/example/webTest/web/dto/PostsListResponseDto.java
  org.example.webTest.web.dto.PostsListResponseDto
+org/example/webTest/config/auth/dto/OAuthAttributes.java
+ org.example.webTest.config.auth.dto.OAuthAttributes
+ org.example.webTest.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
 org/example/webTest/web/HelloController.java
  org.example.webTest.web.HelloController
+org/example/webTest/domain/user/Role.java
+ org.example.webTest.domain.user.Role
 org/example/webTest/web/dto/PostsResponseDto.java
  org.example.webTest.web.dto.PostsResponseDto
 org/example/webTest/domain/BaseTimeEntity.java
  org.example.webTest.domain.BaseTimeEntity
 org/example/webTest/Application.java
  org.example.webTest.Application
-org/example/webTest/domain/posts/PostsRepository.java
- org.example.webTest.domain.posts.PostsRepository
-org/example/webTest/web/dto/PostsSaveRequestDto.java
- org.example.webTest.web.dto.PostsSaveRequestDto
- org.example.webTest.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
-org/example/webTest/web/PostsApiController.java
- org.example.webTest.web.PostsApiController
+org/example/webTest/config/auth/CustomOAuth2UserService.java
+ org.example.webTest.config.auth.CustomOAuth2UserService
 org/example/webTest/service/posts/PostsService.java
  org.example.webTest.service.posts.PostsService
 org/example/webTest/web/IndexController.java
  org.example.webTest.web.IndexController
+org/example/webTest/config/auth/dto/SessionUser.java
+ org.example.webTest.config.auth.dto.SessionUser
+org/example/webTest/web/dto/PostsSaveRequestDto.java
+ org.example.webTest.web.dto.PostsSaveRequestDto
+ org.example.webTest.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
+org/example/webTest/domain/posts/PostsRepository.java
+ org.example.webTest.domain.posts.PostsRepository
+org/example/webTest/web/dto/HelloResponseDto.java
+ org.example.webTest.web.dto.HelloResponseDto
