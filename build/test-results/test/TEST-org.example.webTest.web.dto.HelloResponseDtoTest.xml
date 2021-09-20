@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.webTest.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-19T06:21:30" hostname="LAPTOP-A4QEFCE3" time="0.004">
+<testsuite name="org.example.webTest.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-20T04:55:25" hostname="LAPTOP-A4QEFCE3" time="0.004">
   <properties/>
   <testcase name="lombok_test()" classname="org.example.webTest.web.dto.HelloResponseDtoTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
