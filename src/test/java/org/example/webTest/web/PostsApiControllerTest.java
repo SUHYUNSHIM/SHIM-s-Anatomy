@@ -1,6 +1,5 @@
 package org.example.webTest.web;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.webTest.domain.posts.Posts;
 import org.example.webTest.domain.posts.PostsRepository;
@@ -16,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 
+import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
@@ -84,7 +84,7 @@ public class PostsApiControllerTest {
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).isGreaterThan(0L);*/
         mvc.perform(post(url)
-                    //.contentType(MediaType.APPLICATION_JSON_UTF8)
+                    .contentType(MediaType.APPLICATION_JSON)
                     .content(new ObjectMapper().writeValueAsString(requestDto)))
                     .andExpect(status().isOk());
 
@@ -118,7 +118,7 @@ public class PostsApiControllerTest {
         /*ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity,Long.class);*/
         ////when
         mvc.perform(put(url)
-                    //.contentType(MediaType.APPLICATION_JSON_UTF8)
+                    .contentType(MediaType.APPLICATION_JSON)
                     .content(new ObjectMapper().writeValueAsString(requestDto)))
                     .andExpect(status().isOk());
 

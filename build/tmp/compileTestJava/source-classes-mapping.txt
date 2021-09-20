@@ -2,9 +2,9 @@ org/example/webTest/web/IndexControllerTest.java
  org.example.webTest.web.IndexControllerTest
 org/example/webTest/web/HelloControllerTest.java
  org.example.webTest.web.HelloControllerTest
-org/example/webTest/web/PostsApiControllerTest.java
- org.example.webTest.web.PostsApiControllerTest
-org/example/webTest/domain/posts/PostsRepositoryTest.java
- org.example.webTest.domain.posts.PostsRepositoryTest
 org/example/webTest/web/dto/HelloResponseDtoTest.java
  org.example.webTest.web.dto.HelloResponseDtoTest
+org/example/webTest/domain/posts/PostsRepositoryTest.java
+ org.example.webTest.domain.posts.PostsRepositoryTest
+org/example/webTest/web/PostsApiControllerTest.java
+ org.example.webTest.web.PostsApiControllerTest
