@@ -3,6 +3,8 @@ org/example/webTest/domain/user/User.java
  org.example.webTest.domain.user.User$UserBuilder
 org/example/webTest/config/auth/SecurityConfig.java
  org.example.webTest.config.auth.SecurityConfig
+org/example/webTest/config/JpaConfig.java
+ org.example.webTest.config.JpaConfig
 org/example/webTest/web/PostsApiController.java
  org.example.webTest.web.PostsApiController
 org/example/webTest/web/dto/PostsUpdateRequestDto.java
