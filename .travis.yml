@@ -14,8 +14,23 @@ cache:
     - '$HOME/ .gradle'
 script: "./gradlew clean build"
 
-#CI 실행완료 시 메일로 알람
+before_deploy:
+  - zip -r SHIM-s-Anatomy *
+  - mkdir -p deploy
+  - mv SHIM-s-Anatomy.zip deploy/SHIM-s-Anatomy.zip
+
+deploy:
+  -provider: s3
+   access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+   secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
+   bucket: suhyun-springboot-build
+   skip_cleanup: true
+   acl: private
+   local_dir: deploy # before_deploy에서 설정한 디렉토리
+   wait-until-deployed: true
+
+#CI 실행 완료시 메일로 열람
 notifications:
   email:
     recipients:
-      - lisa9963suhyun@gmail.com
+      -lisa9963suhyun@gamil.com
