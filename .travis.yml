@@ -4,8 +4,6 @@ jdk:
 branches:
   only:
     - master
-before_install:
-  - chmod +x gradlew
 
 #Travis CI 서버의 HOME
 cache:
@@ -13,6 +11,9 @@ cache:
     - '$HOME/ .m2/repository'
     - '$HOME/ .gradle'
 script: "./gradlew clean build"
+
+before_install:
+  - chmod +x gradlew
 
 before_deploy:
   - zip -r SHIM-s-Anatomy *
@@ -31,6 +32,8 @@ deploy:
     wait-until-deployed: true
 
   - provider: codedeploy
+    on:
+      all_branches: true
     access_key_id: $AWS_ACCESS_KEY #Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
     bucket: suhyun-springboot-build #S3 버킷
