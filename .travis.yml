@@ -32,8 +32,6 @@ deploy:
     wait-until-deployed: true
 
   - provider: codedeploy
-    on:
-      all_branches: true
     access_key_id: $AWS_ACCESS_KEY #Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
     bucket: suhyun-springboot-build #S3 버킷
@@ -43,6 +41,7 @@ deploy:
     deployment_group: suhyun-springboot2-webservice-group #웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
+
 #CI 실행 완료시 메일로 열람
 notifications:
   email:
