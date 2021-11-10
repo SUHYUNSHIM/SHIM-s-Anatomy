@@ -46,4 +46,4 @@ deploy:
 notifications:
   email:
     recipients:
-      -lisa9963suhyun@gamil.com
+      - lisa9963suhyun@gamil.com
