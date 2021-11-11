@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.webTest.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-28T06:30:27" hostname="LAPTOP-A4QEFCE3" time="0.004">
+<testsuite name="org.example.webTest.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-11T06:21:40" hostname="LAPTOP-A4QEFCE3" time="0.005">
   <properties/>
-  <testcase name="lombok_test()" classname="org.example.webTest.web.dto.HelloResponseDtoTest" time="0.004"/>
+  <testcase name="lombok_test()" classname="org.example.webTest.web.dto.HelloResponseDtoTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
