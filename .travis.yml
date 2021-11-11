@@ -22,20 +22,20 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-    secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
     bucket: suhyun-springboot-build
     region: ap-northeast-2
     skip_cleanup: true
     acl: private
-    local_dir: deploy # before_deploy에서 설정한 디렉토리
+    local_dir: deploy
     wait-until-deployed: true
 
   - provider: codedeploy
     on:
       all_branches: true
-    access_key_id: $AWS_ACCESS_KEY #Travis repo settings에 설정된 값
-    secret_access_key: $AWS_SECRET_KEY #Travis repo settings에 설정된 값
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
     bucket: suhyun-springboot-build #S3 버킷
     key: SHIM-s-Anatomy.zip
     bundle_type: zip
