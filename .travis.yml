@@ -19,6 +19,7 @@ before_deploy:
   - zip -r SHIM-s-Anatomy *
   - mkdir -p deploy
   - mv SHIM-s-Anatomy.zip deploy/SHIM-s-Anatomy.zip
+
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
