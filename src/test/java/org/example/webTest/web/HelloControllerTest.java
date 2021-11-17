@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
+//첫 테스트 코드 TDD1
 @ExtendWith(SpringExtension.class)
 //@WebMvcTest(controllers = HelloController.class)
 
