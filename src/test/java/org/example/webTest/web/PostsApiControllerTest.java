@@ -95,7 +95,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles="USER")
+    @WithMockUser(roles="USER") //USER인 roll에 대해서 설정, 지정.
     public void Posts_update() throws Exception{
         //given
         Posts savedPosts = postsRepository.save(Posts.builder()

@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 )
 public class HelloControllerTest {
 
-    @Autowired
+    @Autowired //Autowired와 Resource의 차이점?
     private MockMvc mvc;
 
     @WithMockUser(roles="USER")
