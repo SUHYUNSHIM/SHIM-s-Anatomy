@@ -16,7 +16,7 @@ import javax.persistence.Id;
 
 @Getter
 @NoArgsConstructor
-@Entity
+@Entity //엔티티 클래스 - DB와 직접 연결되는
 public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

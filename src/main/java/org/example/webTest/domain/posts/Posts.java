@@ -8,7 +8,7 @@ import org.example.webTest.domain.BaseTimeEntity;
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor //기본 생성자 자동 추가
 @Entity //엔티티 클래스. --> 엔티티 클래스에서는 setter 메소드를 만들지 않는다.
 public class Posts extends BaseTimeEntity {
     @Id //해당 테이블의 primary key field
