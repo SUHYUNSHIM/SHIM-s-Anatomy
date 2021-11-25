@@ -10,7 +10,7 @@ import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @Getter
-@MappedSuperclass //다른 클래스들이 이 클래스를 상속할 경우 필드들도 칼럼으로 인식하도록 한다.
+@MappedSuperclass //다른 클래스들이 이 클래스를 상속할 경우 필드들도 칼럼으로 인식하도록 한다. 시간 생성 엔티티
 @EntityListeners(AuditingEntityListener.class) //Auditing 기능을 포함시킨다.
 public abstract class BaseTimeEntity {
 
