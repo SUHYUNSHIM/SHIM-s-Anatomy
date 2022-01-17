@@ -25,7 +25,7 @@ public class User extends BaseTimeEntity {
     @Column(nullable = false) //nullable을 지정.
     private String name;
 
-    @Column(nullable = false)
+    @Column(nullable = false) //nullable 지정
     private String email;
 
     @Column
